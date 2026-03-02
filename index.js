@@ -31,7 +31,7 @@ let resultadoDesp = incrementarDesp++;
 
 /*9.- Crear variable incrementarAntes con valor 2 y asigna su valor con preincremento a resultadoAntes*/
 let incrementarAntes = 2;
-let resultadoAntes = incrementarAntes--;
+let resultadoAntes = ++incrementarAntes;
 
 
 //Bucles
@@ -111,21 +111,38 @@ let valorResta = MiNumeroFav - variableValorNumerico;
 
 /*22.- Crear variable valorMultiplicación cuyo valor sea la 
 multiplicación de MiNumeroFav por variableValorNumerico*/
-let valorMultiplicación = MiNumeroFav * variableValorNumerico;
+let valorMultiplicacion = MiNumeroFav * variableValorNumerico;
 
 /*23.- Crear variable valorDivisión cuyo valor sea la división de 
 MiNumeroFav entre 3*/
-let valorDivisión= MiNumeroFav / 3;
+let valorDivision= MiNumeroFav / 3;
 
 //Bucles
 /*24.- Crear variable contarHasta10 con valor 0 e incrementar su valor
 con un bucle while hasta que se verifique que contarHasta10 === 10*/
-let contarHasta10
+let contarHasta10 = 0; 
+
+while(contarHasta10 !== 10){
+    contarHasta10++;
+}
 
 /*25.- Crear las variables preI y preJ con valor 0 a continuación cree 
 un bucle que itere 11 veces. En cada iteración se deberá sumar al valor
 de preI el valor de ++preJ*/
+let preI = 0;
+let preJ = 0;
+
+for(let i = 0; i < 11 ; i++){
+    preI = preI + ++preJ;
+}
 
 /*26.- Crear la variable sumaImpares con valor 0 a continuación crea 
 un bucle que itere 10 veces (i < 10) si la iteración es impar se deberá
 sumar a sumaImpares el número de la iteración actual (i)*/
+let sumaImpares = 0;
+
+for(let i = 0 ; i < 10 ; i++){
+    if(i % 2 !== 0){
+        sumaImpares = sumaImpares + i;
+    }
+}
